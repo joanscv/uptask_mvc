@@ -64,7 +64,7 @@ class Email {
         $mail->CharSet = 'UTF-8';
 
         $contenido = '<html>';
-        $contenido .= "<p><strong>Hola, " . $this->nombre . "</strong>. A través del siguiente enlace podrás cambiar la constraseña de tu cuenta en UpTask:<p>";
+        $contenido .= "<p><strong>Hola, " . $this->nombre . "</strong>. A través del siguiente enlace podrás cambiar la constraseña de tu cuenta en UpTask:</p>";
         $contenido .= "<p>Presiona aquí: <a href='https://uptask-js.alwaysdata.net/restablecer?token=" . $this->token . "'>Restablecer Password</a></p>";
         //$contenido .= "<p>Si tu no creaste esta cuenta, puedes ignorar este mensaje.</p>";
         $contenido .= '</html>';
